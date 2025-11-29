@@ -2,14 +2,14 @@
 
 <div align="center">
 
-[![Author](https://img.shields.io/badge/Author-Karthikeyan--BE-blue?style=flat-square&logo=github)](https://github.com/Karthikeyan-BE)
+[![Author](https://img.shields.io/badge/Author-Karthikeyan--BE-blue?style=flat-square&logo=github)](https://github.com/Jenilson-BE)
 [![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0.1-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 A modern, performant weather application built with React and Vite, showcasing clean architecture and contemporary development practices.
 
-[Live Demo](#) • [Report Bug](https://github.com/Karthikeyan-BE/Weather_MERN/issues) • [Request Feature](https://github.com/Karthikeyan-BE/Weather_MERN/issues)
+[Live Demo](#) • [Report Bug](https://github.com/Jenilson-BE/Weather_MERN/issues) • [Request Feature](https://github.com/Jenilson-BE/Weather_MERN/issues)
 
 </div>
 
@@ -47,11 +47,11 @@ This application embodies modern web development principles:
 
 ### Core Technologies
 
-| Technology | Version | Purpose |
-|-----------|---------|----------|
-| **React** | 18.3.1 | UI library with hooks and modern patterns |
-| **Vite** | 6.0.1 | Next-generation frontend tooling |
-| **JavaScript (ES6+)** | Latest | Modern language features |
+| Technology            | Version | Purpose                                   |
+| --------------------- | ------- | ----------------------------------------- |
+| **React**             | 18.3.1  | UI library with hooks and modern patterns |
+| **Vite**              | 6.0.1   | Next-generation frontend tooling          |
+| **JavaScript (ES6+)** | Latest  | Modern language features                  |
 
 ### Development Tools
 
@@ -113,6 +113,7 @@ src/
 ### Custom Hooks
 
 **`useDate`** (Located in `Utilities/useDate.jsx`)
+
 - Custom hook for date/time formatting and manipulation
 - Demonstrates React hooks best practices
 - Reusable across components
@@ -133,7 +134,7 @@ Ensure you have the following installed:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/Karthikeyan-BE/Weather_MERN.git
+git clone https://github.com/Jenilson-BE/Weather_MERN.git
 cd Weather_MERN
 ```
 
@@ -175,6 +176,7 @@ Navigate to `http://localhost:5173` (default Vite port)
 #### Hot Module Replacement (HMR)
 
 Vite provides instant feedback during development:
+
 - Changes reflect immediately without full page reload
 - State is preserved across updates
 - Sub-second development server startup
@@ -189,9 +191,9 @@ import { WeatherContext } from '../Context';
 const WeatherComponent = () => {
   const { weatherData } = useContext(WeatherContext);
   const [loading, setLoading] = useState(false);
-  
+
   // Component logic here
-  
+
   return (
     // JSX rendering
   );
@@ -203,6 +205,7 @@ export default WeatherComponent;
 #### Code Quality
 
 The project includes ESLint configuration for maintaining code standards:
+
 - Consistent code style
 - Early error detection
 - Best practice enforcement
@@ -250,12 +253,14 @@ The application architecture supports easy API integration and expansion:
 const fetchWeatherData = async (location) => {
   try {
     const response = await fetch(
-      `${import.meta.env.VITE_API_BASE_URL}/current.json?key=${import.meta.env.VITE_WEATHER_API_KEY}&q=${location}`
+      `${import.meta.env.VITE_API_BASE_URL}/current.json?key=${
+        import.meta.env.VITE_WEATHER_API_KEY
+      }&q=${location}`
     );
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Weather API Error:', error);
+    console.error("Weather API Error:", error);
     throw error;
   }
 };
@@ -271,6 +276,7 @@ const fetchWeatherData = async (location) => {
 #### Environment Variables
 
 Vite uses the `VITE_` prefix for environment variables:
+
 - Accessible via `import.meta.env.VITE_VARIABLE_NAME`
 - Configure in `.env` files
 - Different configurations for dev/prod
@@ -281,12 +287,12 @@ Vite uses the `VITE_` prefix for environment variables:
 
 ### Available Commands
 
-| Command | Description | Use Case |
-|---------|-------------|----------|
-| `npm run dev` | Start development server with HMR | Active development |
-| `npm run build` | Create production-optimized build | Deployment preparation |
-| `npm run preview` | Preview production build locally | Pre-deployment testing |
-| `npm run lint` | Run ESLint on codebase | Code quality check |
+| Command           | Description                       | Use Case               |
+| ----------------- | --------------------------------- | ---------------------- |
+| `npm run dev`     | Start development server with HMR | Active development     |
+| `npm run build`   | Create production-optimized build | Deployment preparation |
+| `npm run preview` | Preview production build locally  | Pre-deployment testing |
+| `npm run lint`    | Run ESLint on codebase            | Code quality check     |
 
 ### Advanced Development Scripts
 
@@ -295,6 +301,7 @@ Vite uses the `VITE_` prefix for environment variables:
 ```bash
 npm run dev -- --host
 ```
+
 Exposes dev server to local network for mobile testing
 
 #### Production Build Analysis
@@ -302,6 +309,7 @@ Exposes dev server to local network for mobile testing
 ```bash
 npm run build -- --mode production
 ```
+
 Generates optimized bundle with source maps
 
 #### Custom Port Configuration
@@ -309,6 +317,7 @@ Generates optimized bundle with source maps
 ```bash
 npm run dev -- --port 3000
 ```
+
 Run development server on custom port
 
 ---
@@ -333,6 +342,7 @@ git checkout -b feature/your-feature-name
 ```
 
 Branch naming conventions:
+
 - `feature/` - New features
 - `fix/` - Bug fixes
 - `docs/` - Documentation updates
@@ -365,6 +375,7 @@ git push origin feature/your-feature-name
 ```
 
 Then create a Pull Request with:
+
 - Clear description of changes
 - Screenshots (if UI changes)
 - Link to related issues
@@ -391,12 +402,12 @@ When reporting bugs or requesting features:
 
 ## 👤 Credits
 
-**Created and maintained by [Karthikeyan-BE](https://github.com/Karthikeyan-BE)**
+**Created and maintained by [Jenilson-BE](https://github.com/Jenilson-BE)**
 
 ### Connect
 
-- GitHub: [@Karthikeyan-BE](https://github.com/Karthikeyan-BE)
-- Profile: [Karthikeyan-BE's GitHub Profile](https://github.com/Karthikeyan-BE)
+- GitHub: [@Jenilson-BE](https://github.com/Jenilson-BE)
+- Profile: [Jenilson-BE's GitHub Profile](https://github.com/Jenilson-BE)
 
 ### Acknowledgments
 
