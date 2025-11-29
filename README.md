@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Author](https://img.shields.io/badge/Author-Karthikeyan--BE-blue?style=flat-square&logo=github)](https://github.com/Jenilson-BE)
+[![Author](https://img.shields.io/badge/Author-Jenilson--BE-blue?style=flat-square&logo=github)](https://github.com/Jenilson-BE)
 [![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0.1-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
